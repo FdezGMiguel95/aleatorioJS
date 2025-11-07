@@ -87,27 +87,6 @@ form {
   display: inline-block;
 }
 
-#colorHex {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-  color: black;
-}
-
-button {
-  padding: 0.5em 1em;
-  font-size: 1em;
-  border-radius: 0.5em;
-  background-color: white;
-  color: #333;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
-  color: white;
-}
-
 footer {
   width: 100%;
   background-color: #222;
