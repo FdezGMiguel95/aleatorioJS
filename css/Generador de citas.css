@@ -1,0 +1,18 @@
+section p {
+    font-size: 2em;
+    font-style: italic;
+    color: #555;
+    margin: 5% auto 0 auto;
+    float: left;
+    width: 65%;
+}
+
+section h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #0f0f0f;
+    margin-top: 10%;
+    margin-bottom: 4em;
+    float: right;
+    width: 35%;
+}
