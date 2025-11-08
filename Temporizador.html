@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,40 +28,65 @@
                 <li><a href="Formulario de sugerencias.html">Formulario de sugerencias</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
-        <main>
-            <aside></aside>
-            <section>
-                <h2>Bienvenido a Temporizador</h2>
-            </section>
-            <aside></aside>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2069 aleatorio.es. Todos los derechos reservados.</p>
-                <p>
-                    <a href="#">Política de Privacidad</a> |
-                    <a href="#">Términos y Condiciones</a> |
-                    <a href="#">Contacto</a>
-                </p>
-                <div class="social-links">
-                    <a href="https://x.com/" target="_blank" aria-label="Síguenos en Twitter">
-                        <img src="./img/x.png" alt="x-icon">
-                    </a>
-                    <a href="https://facebook.com/" target="_blank" aria-label="Síguenos en Facebook">
-                        <img src="./img/fb.png" alt="fb-icon">
-                    </a>
-                    <a href="https://Instagram.com/" target="_blank" aria-label="Síguenos en Instagram">
-                        <img src="./img/ig.png" alt="ig-icon">
-                    </a>
+    <main>
+        <aside></aside>
+        <section>
+            <div id="controles-tiempo">
+                <div class="unidad-tiempo">
+                    <button class="modificador" id="add-hour">+1h</button>
+                    <div class="etiqueta">Horas</div>
+                    <button class="modificador" id="subtract-hour">-1h</button>
                 </div>
-                <p>Hecho con pasión por la aleatoriedad. 🎲</p>
-            </div>
-        </footer>
 
-        <script src="javascript/Temporizador.js" type="text/javascript"></script>
+                <div class="unidad-tiempo">
+                    <button class="modificador" id="add-minute">+10m</button>
+                    <div class="etiqueta">Minutos</div>
+                    <button class="modificador" id="subtract-minute">-10m</button>
+                </div>
+
+                <div class="unidad-tiempo">
+                    <button class="modificador" id="add-second">+10s</button>
+                    <div class="etiqueta">Segundos</div>
+                    <button class="modificador" id="subtract-second">-10s</button>
+                </div>
+            </div>
+
+            <div id="display-temporizador">00:00:00</div>
+
+            <div id="controles-principales">
+                <button id="iniciar-pausar">▶️/⏸️</button>
+                <button id="reiniciar">🔁</button>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2069 aleatorio.es. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Términos y Condiciones</a> |
+                <a href="#">Contacto</a>
+            </p>
+            <div class="social-links">
+                <a href="https://x.com/" target="_blank" aria-label="Síguenos en Twitter">
+                    <img src="./img/x.png" alt="x-icon">
+                </a>
+                <a href="https://facebook.com/" target="_blank" aria-label="Síguenos en Facebook">
+                    <img src="./img/fb.png" alt="fb-icon">
+                </a>
+                <a href="https://Instagram.com/" target="_blank" aria-label="Síguenos en Instagram">
+                    <img src="./img/ig.png" alt="ig-icon">
+                </a>
+            </div>
+            <p>Hecho con pasión por la aleatoriedad. 🎲</p>
+        </div>
+    </footer>
+
+    <script src="javascript/Temporizador.js" type="text/javascript"></script>
 </body>
 
 </html>
