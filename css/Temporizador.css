@@ -1,7 +1,4 @@
-/* css/Temporizador.css */
-
 #contenedor-temporizador {
-    /* Usando margin para centrar el contenido en lugar de flex/grid */
     width: 90%; 
     margin: 0 auto;
     text-align: center;
@@ -9,14 +6,14 @@
 }
 
 #controles-tiempo {
-    width: 45%; /* Ancho fijo para los controles */
+    width: 45%;
     margin: 1em auto;
-    overflow: hidden; /* Limpia los floats */
+    overflow: hidden;
 }
 
 .unidad-tiempo {
     width: 33%;
-    float: left; /* Usamos float para poner los 3 controles en línea */
+    float: left;
     padding: 0.5em;
 }
 
@@ -37,36 +34,26 @@
 }
 
 #display-temporizador {
-    font-size: 4em; /* Tamaño grande para el tiempo */
+    font-size: 4em;
     font-weight: bold;
-    color: #4CAF50; /* Un color de acento */
-    background-color: #f0f0f0;
-    width: 40%; /* Ancho fijo */
-    margin: 0.75em auto; /* Centrar el display */
+    color: #4CAF50;
+    background-color: #d9d9d9;
+    width: 40%;
+    margin: 0.75em auto;
     padding: 1.5em 3em;
     border-radius: 5%;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada para el tiempo */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #controles-principales button {
-    margin: 0.5em 2%; /* Separa los botones */
+    margin: 0.5em 2%;
 }
 
-/* Estilo específico para el botón de iniciar/pausar - Mantiene el estilo general del botón */
 #iniciar-pausar {
     color: white;
 }
 
-#iniciar-pausar:hover {
-    color: white;
-}
-
-/* Estilo específico para el botón de reiniciar */
 #reiniciar {
-    color: white;
-}
-
-#reiniciar:hover {
     color: white;
 }
