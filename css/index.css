@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #d9d9d9;
 }
 
 header {
@@ -46,7 +46,6 @@ nav{
 section{
     flex-basis: 30%; 
     padding: 1%; 
-    background-color: #d9d9d9;
     margin: 1%;
     border-radius: 1em;
 }
