@@ -22,11 +22,11 @@ function formatoTiempo(totalSegundos) {
     const minutos = Math.floor((segundosAbsolutos % 3600) / 60);
     const segundos = segundosAbsolutos % 60;
 
-    horas = String(horas).padStart(2, '0');
-    minutos = String(minutos).padStart(2, '0');
-    segundos = String(segundos).padStart(2, '0');
+    const h = String(horas).padStart(2, '0');
+    const m = String(minutos).padStart(2, '0');
+    const s = String(segundos).padStart(2, '0');
 
-    return `${horas}:${minutos}:${segundos}`;
+    return `${h}:${h}:${s}`;
 }
 
 
