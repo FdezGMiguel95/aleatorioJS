@@ -27,40 +27,66 @@
                 <li><a href="Formulario de sugerencias.html">Formulario de sugerencias</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
-        <main>
-            <aside></aside>
-            <section>
-                <h2>Bienvenido a Generador de contraseñas</h2>
-            </section>
-            <aside></aside>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2069 aleatorio.es. Todos los derechos reservados.</p>
-                <p>
-                    <a href="#">Política de Privacidad</a> |
-                    <a href="#">Términos y Condiciones</a> |
-                    <a href="#">Contacto</a>
+    <main>
+        <aside></aside>
+        <section>
+            <form action="#" id="passwordForm">
+                <p id="passwordOutput">
+                    Haz clic en el botón para generar tu contraseña.
                 </p>
-                <div class="social-links">
-                    <a href="https://x.com/" target="_blank" aria-label="Síguenos en Twitter">
-                        <img src="./img/x.png" alt="x-icon">
-                    </a>
-                    <a href="https://facebook.com/" target="_blank" aria-label="Síguenos en Facebook">
-                        <img src="./img/fb.png" alt="fb-icon">
-                    </a>
-                    <a href="https://Instagram.com/" target="_blank" aria-label="Síguenos en Instagram">
-                        <img src="./img/ig.png" alt="ig-icon">
-                    </a>
-                </div>
-                <p>Hecho con pasión por la aleatoriedad. 🎲</p>
-            </div>
-        </footer>
+                <div class="checkbox-container">
+                    <label for="mayusculas">Incluir Mayúsculas (A-Z)</label>
+                    <input type="checkbox" id="mayusculas" checked>
 
-        <script src="javascript/Generador de contraseñas.js" type="text/javascript"></script>
+                    <label for="minusculas">Incluir Minúsculas (a-z)</label>
+                    <input type="checkbox" id="minusculas" checked>
+
+                    <label for="numeros">Incluir Números (0-9)</label>
+                    <input type="checkbox" id="numeros" checked>
+
+                    <label for="simbolos">Incluir Símbolos (!@#$%)</label>
+                    <input type="checkbox" id="simbolos">
+
+                    <div class="long">
+                        <label for="longitud">Longitud de la Contraseña (12-32):</label>
+                        <span id="long-val">1</span>
+                        <input type="range" id="longitud" min="12" max="32" value="16" class="slider">
+                    </div>
+                </div>
+                <button type="button" id="generateButton">
+                    Generar Contraseña
+                </button>
+            </form>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2069 aleatorio.es. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Términos y Condiciones</a> |
+                <a href="#">Contacto</a>
+            </p>
+            <div class="social-links">
+                <a href="https://x.com/" target="_blank" aria-label="Síguenos en Twitter">
+                    <img src="./img/x.png" alt="x-icon">
+                </a>
+                <a href="https://facebook.com/" target="_blank" aria-label="Síguenos en Facebook">
+                    <img src="./img/fb.png" alt="fb-icon">
+                </a>
+                <a href="https://Instagram.com/" target="_blank" aria-label="Síguenos en Instagram">
+                    <img src="./img/ig.png" alt="ig-icon">
+                </a>
+            </div>
+            <p>Hecho con pasión por la aleatoriedad. 🎲</p>
+        </div>
+    </footer>
+
+    <script src="javascript/Generador de contraseñas.js" type="text/javascript"></script>
 </body>
 
 </html>
