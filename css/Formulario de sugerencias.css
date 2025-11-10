@@ -1,1 +1,112 @@
-/* Estilos para Formulario de sugerencias.py.html */
+form {
+    height: auto !important;
+    margin: 0 auto;
+    padding: 3em;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.15); 
+    text-align: left;
+    position: relative; 
+    overflow: hidden;
+    background-color: #ffffff; 
+}
+
+.form-group-step {
+    display: none; 
+    animation: fadeIn 0.5s ease-out;
+    overflow: hidden;
+}
+
+.form-group-step.active {
+    display: block;
+}
+
+.form-group-step h2 {
+    border-bottom: 0.125em solid rgb(255, 175, 110);
+    padding-bottom: 0.6em;
+    margin-bottom: 1.8em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.form-field {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.form-field input:not([type="radio"]),
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #ffab66;
+    outline: none;
+    box-shadow: 0 0 0.25em rgba(255, 171, 102, 0.7);
+}
+
+/* --- Estilos Específicos para Radio Buttons (Sexo) --- */
+
+.gender-group {
+    padding-top: 0.5em;
+    margin-bottom: 1.8em;
+    border: 1px dashed #eee;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow: hidden; 
+}
+
+.gender-group span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+.gender-group label span{
+    margin-top: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.gender-group label.radio-label {
+    display: inline-block; 
+    font-weight: normal;
+    margin-right: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+    color: #555;
+    vertical-align: middle; 
+}
+
+.gender-group input[type="radio"] {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.form-field.error input:not([type="radio"]),
+.form-field.error select,
+.form-field.error textarea {
+    border-color: #ff4d4d !important;
+    box-shadow: 0 0 0.25em rgba(255, 77, 77, 0.7);
+}
+
+/* Animación entre partes del formulario */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(0.5em); }
+    to { opacity: 1; transform: translateY(0); }
+}
